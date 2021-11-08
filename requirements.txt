@@ -1,1 +1,2 @@
 selenium
+# проверить chromedriver на совместимость с ОС

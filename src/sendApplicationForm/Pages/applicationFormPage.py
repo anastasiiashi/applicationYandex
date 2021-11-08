@@ -16,6 +16,8 @@ class ApplicationFormPage:
         self.agree_to_terms_checkbox_id = locators.agree_to_terms_checkbox_name
         self.iframe_class_name = locators.iframe_class_name
         self.cookies_button_class = locators.cookies_button_class
+        self.send_button_xpath = locators.send_button_xpath
+        self.successful_message_text = locators.successful_message_text
 
     def accept_cookies(self):
         self.driver.find_element(By.CLASS_NAME, self.cookies_button_class)
@@ -55,4 +57,11 @@ class ApplicationFormPage:
 
     def click_agree_to_terms_checkbox(self):
         self.driver.find_element(By.NAME, self.agree_to_terms_checkbox_id).click()
+
+
+    def click_to_send_form(self):
+        self.driver.find_element(By.XPATH, self.send_button_xpath)
+
+    def successful_sending(self):
+        pass
 

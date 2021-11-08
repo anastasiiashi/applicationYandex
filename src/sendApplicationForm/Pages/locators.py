@@ -1,5 +1,4 @@
 class locators:
-
     # authorization page objects
     login_field_id = "passp-field-login"
     login_page_button_id = "passp:sign-in"
@@ -15,3 +14,5 @@ class locators:
     agree_to_terms_checkbox_name = "answer_boolean_8565"
     iframe_class_name = "lc-iframe__iframe"
     cookies_button_class = "sc-pNWxx sc-jrsJCI dryRrI emsrNO"
+    send_button_xpath = "/html/body/div/form/div[2]/button[3]"
+    successful_message_text = "/html/body/div/div[2]/h3/div/p"

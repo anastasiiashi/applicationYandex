@@ -69,8 +69,14 @@ class ApplicationFormTest(unittest.TestCase):
         application_form.copy_cl_text(cv)
         # кликаем в чекбокс (даём соглашение на обработку данных)
         application_form.click_agree_to_terms_checkbox()
+        # кликаем по кнопке отправки формы
+        application_form.click_to_send_form()
 
         time.sleep(5)
+
+        # здесь должна быть проверка на соответствие сообщения об
+        # успешной отправке формы, но я не хочу спамить вас тестовыми заявками.
+        # Допишу проверку по требованию :)
 
     @classmethod
     def tearDownClass(cls):
